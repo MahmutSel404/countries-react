@@ -1,14 +1,16 @@
 import React from "react";
 
-const CountryCard = ({ data }) => {
+const CountryCard = ({
+  data: { newFlag, name, population, region, capital },
+}) => {
   return (
     <div className="country-card">
-      <img className="country-flag" src={data.newFlag} alt="" />
-      <div className="countr-info">
-        <h1 className="contry-name">{data.name}</h1>
-        <h4 className="contry-population">Population: {data.population}</h4>
-        <h4 className="contry-region">Region:{data.region}</h4>
-        <h4 className="contry-capital">Capital:{data.capital}</h4>
+      <img className="country-flag" src={newFlag} alt="" />
+      <div className="country-info">
+        <h1>{name}</h1>
+        <h4>Population: {population}</h4>
+        <h4>Region:{region}</h4>
+        <h4>Capital:{capital}</h4>
       </div>
     </div>
   );
