@@ -1,7 +1,13 @@
 import React from "react";
 
 const CountryCard = ({
-  data: { newFlag, name, population, region, capital },
+  data: { 
+    newFlag, 
+    name, 
+    population, 
+    region, 
+    capital },
+ 
 }) => {
   return (
     <div className="country-card">
